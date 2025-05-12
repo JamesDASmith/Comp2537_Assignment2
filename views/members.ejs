@@ -1,0 +1,23 @@
+<%- include('templates/header') %>
+<%- include('templates/navbar') %>
+
+<br>
+<h1 class="justify-center text-center text-3xl font-bold text-gray-900 dark:text-white">
+    Hello, <%= username %>!
+</h1>
+<br>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center text-center">
+    <img src="/meme1.jpg" alt="Image 1"  class="w-64 h-64"/>
+    <img src="/meme2.jpg" alt="Image 2"  class="w-64 h-64"/>
+    <img src="/meme3.jpg" alt="Image 3"  class="w-64 h-64"/>
+</div>
+<br><br>
+<div class="justify-center text-center">
+    <a href="/logout">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Log Out
+        </button>
+    </a>
+</div>
+
+<%- include('templates/footer') %>

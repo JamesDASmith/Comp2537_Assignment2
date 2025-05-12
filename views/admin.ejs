@@ -1,0 +1,51 @@
+<%- include('templates/header') %>
+<%- include('templates/navbar') %>
+
+<br>
+<h1 class="justify-center text-center text-3xl font-bold text-gray-900 dark:text-white"> 
+    Admin Page
+</h1>
+
+<br>
+
+<!-- List of User Info and Buttons to Promote / Demote to Admin / User-->
+    <% for(let i = 0; i < users.length; i++) { %>
+        <div class="flex items-center pl-4 space-x-4 mb-4">
+            <!-- User Info -->
+             <div>
+                <%- include('templates/user', {user: users[i]}) %> 
+            </div>
+
+            <div class="flex items-center gap-2 pl-10">
+                <!-- Promote Form -->
+                <form action="/admin/promote" method="post">
+                    <input type="hidden" name="email" value="<%= users[i].email %>">
+                    <button type="submit"
+                            class ="justify-center bg-green-500 text-white px-2 py-1 rounded hover:bg-green-700">
+                        Promote to Admin
+                    </button>
+                </form>
+
+                <!-- Demote Form -->
+                <form action="/admin/demote" method="post">
+                    <input type="hidden" name="email" value="<%= users[i].email %>">
+                    <button type="submit"
+                        class="justify-center bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+                        Demote to User
+                    </button>
+                </form>
+            </div>
+        </div>
+        <br>
+    <% } %>
+
+<br>
+<div class="justify-center text-center">
+    <a href = "/">
+        <button class="justify-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Return Home
+        </button>
+    </a>
+</div>
+
+<%- include('templates/footer') %>

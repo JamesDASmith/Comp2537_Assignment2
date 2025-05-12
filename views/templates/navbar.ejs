@@ -1,0 +1,30 @@
+
+<nav class="sticky flex justify-center space-x-8 p-4 bg-grey-200 shadow-md">
+    <button 
+        onClick="onNavigate('')"
+        class="<%= currentPage === 'home' ? 'bg-blue-500 text-white' : 'bg-white' %> 
+                text-black px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+        Home
+    </button>
+
+    <button 
+        onClick="onNavigate('members')"
+        class="<%= currentPage === 'members' ? 'bg-blue-500 text-white' : 'bg-white' %> 
+            text-black px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+        Members
+    </button>
+
+    <button 
+        onClick="onNavigate('admin')"
+        class="<%= currentPage === 'admin' ? 'bg-blue-500 text-white' : 'bg-white' %> 
+            text-black px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+        Admin
+    </button>
+
+    <button 
+        onClick="onNavigate('404')"
+        class="<%= currentPage === 'error' ? 'bg-blue-500 text-white' : 'bg-white' %> 
+                text-black px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+        Error
+    </button>
+</nav>

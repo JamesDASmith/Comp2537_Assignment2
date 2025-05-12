@@ -1,0 +1,41 @@
+<%- include ('templates/header') %>
+
+<br>
+<h1 class="justify-center text-center text-3xl font-bold text-gray-900 dark:text-white"> 
+    Please Sign In 
+</h1>
+<br><br><br>
+<form   action = '/loginUser' 
+        method = 'post'
+        class = "justify-center text-center">
+
+    <input  type = 'email' 
+            name = 'email' 
+            placeholder = 'Email Address' 
+            required
+            class = "justify-center text-center border-gray-300 border-2 rounded-md py-2">
+    <br>
+
+    <input  type = 'password' 
+            name = 'password' 
+            placeholder = 'Password' 
+            required
+            class = "justify-center text-center border-gray-300 border-2 rounded-md py-2">
+    <br><br>
+
+    <button type = 'submit'
+            class = "justify-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Login
+    </button>
+</form>
+
+<br></br>
+<div class="justify-center text-center">
+    <a href = "/">
+        <button class="justify-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Return Home
+        </button>
+    </a>
+</div>
+
+<%- include ('templates/footer') %>
