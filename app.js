@@ -59,7 +59,7 @@ app.use(session({
     cookie: {
         maxAge: expireTime,
         sameSite: 'lax',
-        secure:  true // false <- for local testing
+        secure:  true // false <- for local testing, true <- for production
     }
 }));
 

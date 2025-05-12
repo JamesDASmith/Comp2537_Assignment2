@@ -1,7 +1,7 @@
 {
-  "name": "comp2537_assignment1",
+  "name": "comp2537_assignment2",
   "version": "1.0.0",
-  "description": "Comp1537_Assignment1",
+  "description": "Comp1537_Assignment2",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesDASmith/Comp2537_Assignment1.git"
+    "url": "git+https://github.com/JamesDASmith/Comp2537_Assignment2.git"
   },
   "author": "James Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JamesDASmith/Comp2537_Assignment1/issues"
+    "url": "https://github.com/JamesDASmith/Comp2537_Assignment2/issues"
   },
-  "homepage": "https://github.com/JamesDASmith/Comp2537_Assignment1#readme",
+  "homepage": "https://github.com/JamesDASmith/Comp2537_Assignment2#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-mongo": "^5.1.0",
